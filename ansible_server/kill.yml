@@ -1,3 +1,7 @@
+# This script will kill the iperf process on each of the servers
+# acting as an iperf server, which will result in all iperf
+# processes being stopped.
+#
 ---
 
 - hosts: servers

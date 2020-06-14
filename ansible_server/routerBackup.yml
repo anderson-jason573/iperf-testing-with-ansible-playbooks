@@ -1,3 +1,6 @@
+# This script will backup all cisco router configs to the 
+# directory specified at the end of the script.
+#
 ---
 
 - hosts: routers

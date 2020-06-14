@@ -11,7 +11,7 @@
 - hosts: clients
   remote_user: ansible
   tasks:
-    - name: Enable iperf test1 on clients
+    - name: Enable iperf test6 on clients
       shell: ./test6.sh
       async: 1000
       poll: 0
