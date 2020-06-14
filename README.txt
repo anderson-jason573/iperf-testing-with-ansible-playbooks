@@ -1,7 +1,7 @@
 # GWL-NewDC Project
 
 # Collection of Bash and YAML scripts being used with Ansible for the lab I created
-  to test and vet configurations for Orchestrator and the appliances, for GWL's new
+  to test and vet configurations for Orchestrator and Silver Peak appliances, for GWL's new
   DC project.
 
 # The purpose of these scripts is to initiate iperf sessions between three servers
@@ -13,7 +13,7 @@
 # Servers 4 - 6 are 'iperf servers'
 
 # Bash scripts are placed on their respecetive servers, to initiate iperf sessions.
-  Servers designated as 'iperf servers', get the 'server.sh' bash script.  This script
+  Servers designated as 'iperf servers' get the 'server.sh' bash script.  This script
   is the same for all servers.
   
 #  Servers designated as 'iperf clients', get six bash scripts, designated 'test1.yml'
