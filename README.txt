@@ -8,6 +8,9 @@
   designated as 'iperf clients' and three servers designated as 'iperf servers'.  The
   goal is to generate enough 'source IP' and 'destination IP' pairs, for ecmp testing
   through the silver peak fabric.
+  
+# Servers 1 - 3 are 'iperf clients'
+# Servers 4 - 6 are 'iperf servers'
 
 # Bash scripts are placed on their respecetive servers, to initiate iperf sessions.
   Servers designated as 'iperf servers', get the server.sh bash script.  This script
