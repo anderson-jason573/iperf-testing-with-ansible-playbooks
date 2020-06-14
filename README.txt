@@ -13,15 +13,15 @@
 # Servers 4 - 6 are 'iperf servers'
 
 # Bash scripts are placed on their respecetive servers, to initiate iperf sessions.
-  Servers designated as 'iperf servers', get the server.sh bash script.  This script
+  Servers designated as 'iperf servers', get the 'server.sh' bash script.  This script
   is the same for all servers.
   
-#  Servers designated as 'iperf clients', get six test scripts, designated test1.yml
-   through test6.yml.  Although the scripts are named the same for each server, they
+#  Servers designated as 'iperf clients', get six bash scripts, designated 'test1.yml'
+   through 'test6.yml'.  Although the scripts are named the same for each server, they
    are different in which server they are targeting for each iperf session.
 
-#  There are six Ansible playbooks (yaml scripts), named tes1.yml through test6.yml.
-   Each playbook will kick off the server.sh script on the designated 'iperf servers',
+#  There are six Ansible playbooks (yaml scripts), named 'tes1.yml' through 'test6.yml'.
+   Each playbook will kick off the 'server.sh' script on the designated 'iperf servers',
    and the cooresponding test script on the 'iperf clients'.
 
 # Ansible playbooks (yaml scripts) executed with command:
