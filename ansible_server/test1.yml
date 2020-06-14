@@ -1,0 +1,18 @@
+---
+
+- hosts: servers
+  remote_user: ansible
+  tasks:
+    - name: Enable iperf3 server sessions on server4, server5 and server6
+      shell: ./server.sh
+      async: 1000
+      poll: 0
+
+- hosts: clients
+  remote_user: ansible
+  tasks:
+    - name: Enable iperf test sessions on clients
+      shell: ./test1.sh
+      async: 1000
+      poll: 0
+

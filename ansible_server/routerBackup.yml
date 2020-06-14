@@ -1,0 +1,20 @@
+---
+
+- hosts: routers
+  gather_facts: true
+  connection: local
+
+  tasks:
+    - name: get running configuration
+      ios_command:
+        commands: show run
+        username: admin
+        password: admin
+      register: config
+
+    - name: save output to fileserver
+      copy: 
+        content: "{{ config.stdout[0] }}"
+        dest: "/mnt/fileserver/projects/GWL_Lab/backups/show_run_{{ inventory_hostname }}.txt"
+# Raises privileges to sudo, in order to write files to fileserver
+      become: yes 
