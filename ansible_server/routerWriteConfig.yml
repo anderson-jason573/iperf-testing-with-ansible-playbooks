@@ -1,0 +1,13 @@
+---
+
+- hosts: routers
+  gather_facts: true
+  connection: local
+
+  tasks:
+    - name: write config
+      ios_command:
+        commands: wr
+        username: admin
+        password: admin
+      register: config
