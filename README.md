@@ -23,7 +23,8 @@ Ansible playbooks (yaml scripts) executed with command:
  for example:
      "ansible-playbook test1.yml"
        
-Ansible host groupings are detailed in the '/etc/ansible/hosts' file.
+Ansible host groupings are detailed in the 'ansible_server/hosts_file.txt' file, which is
+normally found at '/etc/ansible/hosts'.
 
 "&>/dev/null &" is used in the bash files, to send output to a bit bucket
    instead of the screen.  This allows us to access the server, without
