@@ -1,5 +1,4 @@
-# GWL-NewDC
- Collection of Bash and YAML scripts being used with Ansible
+# Collection of Bash and YAML scripts being used with Ansible
 
 # Collection of Bash and YAML scripts being used with Ansible for the lab I created
   to test and vet configurations for Orchestrator and Silver Peak appliances, for GWL's new
