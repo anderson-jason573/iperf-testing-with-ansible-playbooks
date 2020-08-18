@@ -1,13 +1,7 @@
 # Collection of Bash and YAML scripts being used with Ansible
 
-Collection of Bash and YAML scripts being used with Ansible for the lab I created
-to test and vet configurations for Orchestrator and Silver Peak appliances, for GWL's new
-DC project.
-
 The purpose of these scripts is to initiate iperf sessions between three servers
-designated as 'iperf clients' and three servers designated as 'iperf servers'.  The
-goal is to generate enough 'source IP' and 'destination IP' pairs, for ecmp testing
-through the silver peak fabric.
+designated as 'iperf clients' and three servers designated as 'iperf servers'.  
   
 Servers 1 - 3 are 'iperf clients'
 Servers 4 - 6 are 'iperf servers'
